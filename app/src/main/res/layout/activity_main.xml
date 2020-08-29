@@ -8,46 +8,51 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nombre"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:hint="@string/string_name"
+        />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/contraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:hint="@string/string_password"
+        />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/repetirContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Repetir contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:hint="@string/string_password2"
+        />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:hint="@string/string_email"
+        />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="18dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tipoTarjeta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tipo de tarjeta" />
+        android:hint="@string/string_tarjeta"
+        />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -60,14 +65,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Debito" />
+            android:text="@string/string_debito"/>
 
         <RadioButton
             android:id="@+id/credito"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Credito" />
+            android:text="@string/string_credito"/>
     </RadioGroup>
 
     <LinearLayout
@@ -76,29 +81,28 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/numeroDeTarjeta"
             android:layout_width="283dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Numero de tarjeta"
-            android:inputType="number" />
+            android:inputType="number"
+            android:hint="@string/string_tarjeta"/>
 
         <EditText
-            android:id="@+id/editTextNumber2"
+            android:id="@+id/ccv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="CCV"
-            android:inputType="number" />
+            android:inputType="number"
+            android:hint="@string/string_CCV"/>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/fechaVencimiento"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fecha de vencimiento" />
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,22 +110,22 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextNumber3"
+            android:id="@+id/mes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Mes"
-            android:inputType="number" />
+            android:inputType="number"
+            android:hint="@string/string_mes"/>
 
         <EditText
-            android:id="@+id/editTextNumber4"
+            android:id="@+id/año"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Año"
-            android:inputType="number" />
+            android:inputType="number"
+            android:hint="@string/string_anio"/>
 
         <Space
             android:layout_width="wrap_content"
@@ -138,39 +142,39 @@
         android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/editTextNumber5"
+        android:id="@+id/cbu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="CBU"
-        android:inputType="number" />
+        android:inputType="number"
+        android:hint="@string/string_cbu"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/aliasCBU"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Alias CBU"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:hint="@string/string_aliascbu"/>
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="24dp" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/cargaInicial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿Realizar carga inicial?" />
+        android:text="@string/string_cargaInicial"/>
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="89dp" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/terminosYCondiciones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Acepto los terminos y condiciones" />
+        android:text="@string/string_termYCond"/>
 
 </LinearLayout>
